@@ -19,19 +19,36 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 990px) and (min-height: 750px) {
+
+
+
+@media screen and (max-width: 990px) {
+	#nameCaption {
+		position: relative;
+		top: 4%;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	#nameCaption {
+		position: relative;
+		top: 10%;
+	}
+}
+
+/* @media screen and (min-width: 990px) and (min-height: 750px) { */
  
   .vh-100 {
 	height: 100vh;
   }
 
-}
+
 
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 5; /* default: 1 */
   top: 0;
   left: 0;
   background-color: #111;
@@ -48,6 +65,8 @@ html {
   color: #818181;
   display: block;
   transition: 0.3s;
+
+
 }
 
 .sidenav a:hover {
@@ -72,6 +91,28 @@ html {
   .sidenav a {font-size: 18px;}
 }
 
+.circle {
+	position: relative;
+	left: 22%;
+
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 20px;
+
+}
+
+#headshotBreak {
+	margin-top: 20px;
+}
+
+#menuText {
+	position: sticky;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 #main {
 	margin: 0;
 	padding: 0;
@@ -82,7 +123,8 @@ html {
 	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+	padding-bottom: 120px;
+	z-index: 3;
 }
 
 #nameH1 {
@@ -105,11 +147,63 @@ html {
 
 #nameCaption {
 	text-align: center;
-	
+
 
     font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 4em;
 	font-size: 4vw;
+}
+
+#skillContainer {
+	position: absolute;
+	width: 100%;
+	max-width: 1567px;
+	background-color: pink;
+	z-index: 3;
+}
+
+.rectangleSkillSet {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+	color: black;
+
+	margin-top: -9em;
+	width: 1100px;
+	/*height: 200px;*/
+	width: 60em;
+	/*height: 15em;*/
+	border: .2em outset lightgrey;
+	border-radius: .5em;
+	text-align: center;
+	z-index: 4;
+}
+
+#skillH1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-size: 3em;
+	font-size: 3vw;
+}
+
+#skillPicsContainer {
+	display: flex;
+	justify-content: center;	
+}
+
+.skillPics {
+	display: block;
+	max-width: 400px;
+	max-height: 400px;
+	width: auto;
+	height: auto;
+}
+
+#cssLogo {
+	display: block;
+	width: 250px;
+	height: 220px;
 }
 
 </style>
@@ -120,6 +214,8 @@ html {
 	
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <span class="circle"></span>
+  <hr id="headshotBreak">
   <a href="#">About</a>
   <a href="#">Skills</a>
   <a href="#">Portfolio</a>
@@ -129,9 +225,22 @@ html {
 <div id="main">
 
 	<div id="mainContainer" class="vh-100">
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+		<span id="menuText" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 		<h1 id="nameH1">Jai Juan Solis</h1>
 		<p id="nameCaption">Front-end Web Developer</p>
+	</div>
+
+	<div id="skillContainer">
+		<div class="rectangleSkillSet">
+			<h1 id="skillH1">Experienced Languages</h1>
+			<div id="skillPicsContainer">
+				<img class="skillPics" src="pics/HTML5 Logo2.png">
+				<img class="skillPics" id="cssLogo" src="pics/CSS Logo.svg">
+				<img class="skillPics" id="cssLogo" src="pics/JavaScript Logo.svg">
+
+			</div>
+		</div>
+
 	</div>
 
 </div>
