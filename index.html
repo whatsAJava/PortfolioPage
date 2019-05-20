@@ -51,35 +51,7 @@ html {
 	}
 }
 
-@media screen and (max-width: 450px) {
-	.sidenav {
-		padding-top: 7.488em;
-		padding-top: 7.488vw;
-	}
 
-	.sidenav a {
-		font-size: 3.12em;
-		font-size: 3.12vw;
-	}
-
-	.sidenav .closebtn {
-		right: 3.12em;
- 		right: 3.12vw;
-
-		font-size: 4.4928em;
-		font-size: 4.4928vw;
-
-		margin-left: 6.24em;
-		margin-left: 6.24vw; 
-
-	}
-
-	#headshotBreak {
-		margin-top: 2.496em;
-		margin-top: 2.496vw;
-	}
-	
-}
 
 /* @media screen and (min-width: 990px) and (min-height: 750px) { */
  
@@ -105,7 +77,9 @@ html {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  text-align: right;
+  /*padding: 8px 8px 8px 32px;*/
+  padding: .5em 2em;
   text-decoration: none;
   font-size: 1.56em;
   font-size: 1.56vw;
@@ -113,7 +87,6 @@ html {
   color: #818181;
   display: block;
   transition: 0.3s;
-
 
 }
 
@@ -305,6 +278,64 @@ html {
 	height: 220px;
 }
 
+
+@media screen and (max-width: 450px) {
+	.sidenav {
+		padding-top: 7.488em;
+		padding-top: 7.488vw;
+	}
+
+	.sidenav a {
+		font-size: 3.12em;
+		font-size: 3.12vw;
+	}
+
+	.sidenav .closebtn {
+		right: 3.12em;
+ 		right: 3.12vw;
+
+		font-size: 4.4928em;
+		font-size: 4.4928vw;
+
+		margin-left: 6.24em;
+		margin-left: 6.24vw; 
+
+	}
+
+	.circle {
+		width: 12.48em;
+		width: 12.48vw;
+
+		height: 12.48em;
+		height: 12.48vw;
+
+		padding: 2.496em;
+		padding: 2.496vw;
+	}
+
+	#headshotBreak {
+		margin-top: 2.496em;
+		margin-top: 2.496vw;
+	}
+
+	#nameH1 {
+		font-size: 12em;
+		font-size: 12vw;
+	}
+
+	#nameCaption {
+		font-size: 8em;
+		font-size: 8vw;
+	}
+
+	#comingSoon {
+		font-size: 8em;
+		font-size: 8vw;
+	}
+
+	
+}
+
 </style>
 
 
@@ -324,7 +355,7 @@ html {
 <div id="main">
 
 	<div id="mainContainer" class="vh-100">
-		<span id="menuText" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+		<span id="menuText" style="font-size:30px;cursor:pointer" onclick="openNav(x)">&#9776; MENU</span>
 		<h1 id="nameH1">Jai Juan Solis</h1>
 		<p id="nameCaption">Front-end Web Developer</p>
 		<h2 id="comingSoon">(Coming Soon)</h2>
