@@ -2,16 +2,13 @@
  $(document).ready(function(){
 	$("#nameH1").addClass("load");
 	$("#nameCaption").addClass("load");
-	$("#comingSoon").addClass("load");
 });
 
 // Sidebar Navigation
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "15.6em";
-  document.getElementById("mySidenav").style.width = "15.6vw";
-  document.getElementById("main").style.marginLeft = "15.6em";
-  document.getElementById("main").style.marginLeft = "15.6vw";
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
