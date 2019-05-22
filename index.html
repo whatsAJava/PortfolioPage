@@ -21,6 +21,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+	margin: 0;
+}
 
 @media screen and (min-width: 990px) {
 	#nameCaption {
@@ -34,14 +37,6 @@ html {
 	}
 }
 
-@media screen and (max-width: 990px) {
-	#nameCaption {
-		position: relative;
-		margin-top: -2em;
-	}
-
-
-}
 
 @media screen and (max-width: 590px) {
 	#mainContainer {
@@ -131,9 +126,15 @@ html {
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+@media screen and (max-height: 576px) {
+  .sidenav {
+  	padding-top: 15px;
+  }
+  .sidenav a {
+  		font-size: 1.5em;
+  		font-size: 1.5vw;
+  	}
 }
 
 .circle {
@@ -160,8 +161,10 @@ html {
 	margin-top: 1.248vw;
 }
 
-#menuText {
-	position: sticky;
+#menuText {/*
+	position: -webkit-sticky; /* Safari */
+	/*position: sticky;
+	top: 0;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -263,6 +266,8 @@ html {
 #aboutContainer {
 	padding-top: 2.5em;
 	padding-top: 2.5vw;
+	padding-bottom: 2.5em;
+	padding-bottom: 2.5vw;
 	text-align: center;
 	background-color: white;
 }
@@ -336,15 +341,16 @@ html {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
 	.sidenav {
 		padding-top: 7.488em;
 		padding-top: 7.488vw;
 	}
 
 	.sidenav a {
-		font-size: 3.12em;
-		font-size: 3.12vw;
+		text-align: center;
+		font-size: 5em;
+		font-size: 5vw;
 	}
 
 	.sidenav .closebtn {
@@ -399,6 +405,31 @@ html {
 		font-size: 8vw;
 	}
 
+	#aboutH1 {
+		font-size: 5em;
+		font-size: 5vw;
+	}
+
+	#aboutP {
+		font-size: 4em;
+		font-size: 4vw;
+	}
+
+
+}
+
+@media screen and (max-width: 990px) {
+	#nameCaption {
+		position: relative;
+		margin-top: -2em;
+	}
+
+	#contactP {
+		font-size: 3.5em;
+		font-size: 3.5vw;
+	}
+
+	
 
 }
 

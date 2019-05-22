@@ -38,6 +38,6 @@ function myFunction(x) {
   }
 } */
 
-var x = window.matchMedia("(max-width: 450px)")
+var x = window.matchMedia("(max-width: 576px)")
 // myFunction(x) // Call listener function at run time
 // Attach listener function on state changes
