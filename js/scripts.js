@@ -10,10 +10,11 @@
 function openNav(x) {
   
 	if (x.matches) {
-		document.getElementById("mySidenav").style.width = "30.2em";
-		document.getElementById("mySidenav").style.width = "30.2vw";
-		document.getElementById("main").style.marginLeft = "30.2em";
-		document.getElementById("main").style.marginLeft = "30.2vw";
+		document.getElementById("mySidenav").style.width = "100%";
+		//document.getElementById("mySidenav").style.width = "30.2em";
+		//document.getElementById("mySidenav").style.width = "30.2vw";
+		//document.getElementById("main").style.marginLeft = "30.2em";
+		//document.getElementById("main").style.marginLeft = "30.2vw";
 		x.addListener(openNav);
 	} else {
 	document.getElementById("mySidenav").style.width = "15.6em";
