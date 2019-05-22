@@ -82,15 +82,14 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 1.56em;
-  right: 1.56vw;
+  top: -0.3em;
+  top: -1.3vw;
+  right: 0;
 
-  font-size: 2.2464em;
-  font-size: 2.2464vw;
-
-  margin-left: 3.12em;
-  margin-left: 3.12vw; 
+  font-size: 4em;
+  font-size: 4vw;
+  padding-right: 0.25em;
+  padding-right: 1vw;
 }
 
 #main {
@@ -369,16 +368,16 @@ body {
 
 	.sidenav a {
 		text-align: center;
-		font-size: 10em;
-		font-size: 10vw;
+		font-size: 13em;
+		font-size: 13vw;
 	}
 
 	.sidenav .closebtn {
 		right: 3.12em;
  		right: 3.12vw;
 
-		font-size: 4.4928em;
-		font-size: 4.4928vw;
+		font-size: 10em;
+		font-size: 10vw;
 
 		margin-left: 6.24em;
 		margin-left: 6.24vw; 
@@ -398,11 +397,11 @@ body {
 		right: 0;
 		margin: auto;
 
-		width: 25em;
-		width: 25vw;
+		width: 35em;
+		width: 35vw;
 
-		height: 25em;
-		height: 25vw;
+		height: 30em;
+		height: 35vw;
 
 		padding: 2.496em;
 		padding: 2.496vw;
@@ -446,8 +445,8 @@ body {
 
 @media screen and (max-width: 576px) and (max-height: 576px) {
 	.sidenav a {
-		font-size: 5em;
-		font-size: 5vw;
+		font-size: 8em;
+		font-size: 8vw;
 	}
 }
 
@@ -462,10 +461,10 @@ body {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <img class="circle" src="pics/hs2.JPG">
   <hr id="headshotBreak">
-  <a href="#">About</a>
-  <a href="#">Skills</a>
-  <a href="#">Portfolio</a>
-  <a href="#">Contact</a>
+  <a onclick="closeNav()" href="#aboutContainer">About</a>
+  <a onclick="closeNav()" href="#">Skills</a>
+  <a onclick="closeNav()" href="#">Portfolio</a>
+  <a onclick="closeNav()" href="#">Contact</a>
 </div>
 
 <div id="main">
