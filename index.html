@@ -361,12 +361,43 @@ body {
 	padding-bottom: 9px;
 }
 
+#languageText {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	font-size: 3em;
+	font-size: 3vw;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
 #footerContainer {
 	background: #434343;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding-top: 2em;
 	padding-top: 2vw;
+	padding-bottom: 2.5em;
+	padding-bottom: 2.5vw;
+}
+
+#contactH1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 4em;
+	font-size: 4vw;
+	color: gold;
+	text-align: center;
+}
+
+#contactPText {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-size: 3em;
+	font-size: 3vw;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 2vw;
+	text-align: center;
 }
 
 #backToTopBTN {
@@ -389,11 +420,69 @@ body {
 	color: white;
 }
 
+#buttonLink a:hover {
+	color: white;
+}
+
+#footerContactContainer {
+	display: flex;
+	justify-content: center;
+	/*padding-left: 9.5em;
+	padding-left: 9.5vw;*/
+}
+
+.contactInfoContainers {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	color: white;
+	margin-bottom: 3vw;
+}
+
+#numContainer {
+	padding-left: 15em;
+	padding-left: 15vw;
+}
+
+#emailContainer {
+	padding-right: 10em;
+	padding-right: 10vw;
+	margin-right: 6.9em;
+	margin-right: 6.9vw;
+}
+
+#phoneNumberH2 {
+	font-size: 3em;
+	font-size: 3vw;
+}
+
+#emailH2 {
+	font-size: 3em;
+	font-size: 3vw;
+}
+
+#phoneNumberP {
+	font-size: 2.5em;
+	font-size: 2.5vw;
+}
+
+#emailP {
+	font-size: 2.5em;
+	font-size: 2.5vw;
+}
+
+
+.pageBreak {
+	border-color: #e4efe9;
+	border-width: .1em;
+	border-width: .1vw;
+	width: 4em;
+	width: 4vw;
+}
+
 #footerText {
-	padding-top: 2.5em;
-	padding-top: 2.5vw;
-	padding-bottom: 2.5em;
-	padding-bottom: 2.5vw;
+	padding-top: 1em;
+	padding-top: 1vw;
+	
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2vw;
@@ -578,8 +667,8 @@ body {
   <hr id="headshotBreak">
   <a onclick="closeNav()" href="#aboutContainer">About</a>
   <a onclick="closeNav()" href="#languageContainer">Skills</a>
-  <a onclick="closeNav()" href="#">Portfolio</a>
-  <a onclick="closeNav()" href="#">Contact</a>
+  <!--<a onclick="closeNav()" href="#">Portfolio</a>-->
+  <a onclick="closeNav()" href="#footerContainer">Contact</a>
 </div>
 
 <div id="main">
@@ -588,10 +677,10 @@ body {
 		<span id="menuText" style="font-size:30px;cursor:pointer" onclick="openNav(x)">&#9776; MENU</span>
 		<h1 id="nameH1">Jai Juan Solis</h1>
 		<p id="nameCaption">Front-end Web Developer</p>
-		<h2 id="comingSoon">(Site Under Construction)</h2>
+		<!--<h2 id="comingSoon">(Site Under Construction)</h2>-->
 		<!-- <h3 id="contactH3">Contact</h3> -->
-		<p id="contactP">Email: info@jaijuan.me<br/>
-			Phone Number: (614) 398-0022</p>
+		<p id="contactP">Email: <a href="mailto:info@jaijuan.me" id="contactA">info@jaijuan.me</a><br/>
+			Phone Number: <a href="tel:+1-614-398-0022">(614) 398-0022</a></p>
 	</div>
 
 	<div id="aboutContainer">
@@ -617,15 +706,35 @@ body {
 				<img class="languagePics" id="cssLogo" src="pics/CSS Logo.svg">
 				<figcaption>CSS 3</figcaption>
 			</figure>
+			</div>
+			<p id="languageText">I use HTML, CSS, and JavaScript to build interective and responsive webpages to ensure the site looks excellent on all devices, whether it be a desktop, tablet, or smartphone.</p>
 
 			</div>
 		</div>
 
 	<footer>
 		<div id="footerContainer">
-			<a href="#top" style="text-decoration: none;"><button id="backToTopBTN">Back To Top</button></a>
-			<p id="footerText">&copy; 2019 Jai Juan Solis</p>
-		</div>
+			<h1 id="contactH1">Contact</h1>
+			<p id="contactPText">Give me a call or send me an email to discuss your website design needs.</p>
+			<div id="footerContactContainer">
+				<div class="contactInfoContainers" id="numContainer">
+					<h2 id="phoneNumberH2">Phone Number</h2>
+					<hr class="pageBreak">
+					<a href="tel:+1-614-398-0022" id="phoneNumberP">(614)398-0022</a>
+				</div>
+				<button id="backToTopBTN"><a id="buttonLink" href="#top" style="text-decoration: none; color: black;">Back To Top</a></button>
+				<div class="contactInfoContainers" id="emailContainer">
+					<h2 id="emailH2">Email</h2>
+					<hr class="pageBreak">
+					<a href="mailto:info@jaijuan.me" id="emailP">info@jaijuan.me</a>
+				</div>
+			</div>
+			
+			<div id="copyContainer">
+				<p id="footerText">&copy; 2019 Jai Juan Solis</p>
+			</div>
+	</div>
+		
 	</footer>
 
 <!--
