@@ -1,8 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Web Developer Portfolio of Jai Juan Solis">
+  	<meta name="keywords" content="developer, front-end, website">
+  	<meta name="author" content="Jai Juan Solis">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>Jai Juan Solis</title>
+	<title>Jai Juan Solis's Portfolio</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
@@ -124,10 +128,11 @@ body {
 	margin-top: 1.248vw;
 }
 
-#menuText {/*
-	position: -webkit-sticky; /* Safari */
-	/*position: sticky;
-	top: 0;*/
+#menuText {
+	/*position: -webkit-sticky; /*-- Safari Fallback 
+	position: fixed;
+	top: 0;
+	display: block;*/
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -227,30 +232,31 @@ body {
 }
 
 #aboutContainer {
-	padding-top: 2.5em;
-	padding-top: 2.5vw;
-	padding-bottom: 2.5em;
-	padding-bottom: 2.5vw;
+	padding-top: 3em;
+	padding-top: 3vw;
+	padding-bottom: 4.5em;
+	padding-bottom: 4.5vw;
 	text-align: center;
 	background-color: white;
 }
 
 #aboutH1 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 4em;
-	font-size: 4vw; 
+	font-size: 5em;
+	font-size: 5vw; 
 	color: #93a5cf;
 }
 
 #aboutP {
     font-family: 'Open Sans Condensed', sans-serif;
 	color: black;
-	font-size: 2em;
-	font-size: 2vw;
+	font-size: 3em;
+	font-size: 3vw;
 	width: 80%;
 	margin: auto;
 }
 
+/*
 #skillContainer {
 	position: absolute;
 	width: 100%;
@@ -268,9 +274,9 @@ body {
 
 	margin-top: -9em;
 	width: 1100px;
-	/*height: 200px;*/
+	/*height: 200px;
 	width: 60em;
-	/*height: 15em;*/
+	/*height: 15em;
 	border: .2em outset lightgrey;
 	border-radius: .5em;
 	text-align: center;
@@ -301,6 +307,97 @@ body {
 	display: block;
 	width: 250px;
 	height: 220px;
+}
+*/
+#languageContainer {
+	background: #ff9a9e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff9a9e, #fad0c4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff9a9e, #fad0c4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-bottom: 2.5em;
+	padding-bottom: 2.5vw;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#languageH1 {
+	font-size: 4em;
+	font-size: 4vw; 
+	text-align: center;
+	color: black;
+
+	padding-top: 2.5em;
+	padding-top: 2.5vw;
+}
+
+#languagePicRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	color: black;
+	font-size: 3em;
+	font-size: 3vw;
+	padding-left: 6vw;
+}
+
+.languagePics {
+	/*width: 300px;*/
+	width: 18.75em;
+	width: 18.75vw;
+	height: auto;
+	padding-bottom: 20px;
+}
+
+#cssLogo {
+	width: 400px;
+	width: 25em;
+	width: 25vw;
+	height: 350px;
+	height: 21.875em;
+	height: 21.875vw;
+	margin-top: -35px;
+	margin-top: -2.1875em;
+	margin-top: -2.1875vw;
+	padding-bottom: 9px;
+}
+
+#footerContainer {
+	background: #434343;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding-top: 2em;
+	padding-top: 2vw;
+}
+
+#backToTopBTN {
+	background: #e4efe9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #93a5cf, #e4efe9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #93a5cf, #e4efe9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: block;
+	margin: auto;
+	padding: 1vw;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2vw;
+	color: black;
+	border-radius: 0%;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+}
+
+#backToTopBTN:hover {
+	color: white;
+}
+
+#footerText {
+	padding-top: 2.5em;
+	padding-top: 2.5vw;
+	padding-bottom: 2.5em;
+	padding-bottom: 2.5vw;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 2vw;
+	color: white;
 }
 
 @media screen and (min-width: 990px) {
@@ -440,6 +537,24 @@ body {
 		font-size: 4vw;
 	}
 
+	#languagePicRow {
+  		flex-direction: row;
+
+  	}
+
+  	.languagePics {
+  		width: 13.75em;
+  		width: 13vw;
+  	}
+
+  	#cssLogo {
+  		width: 20em;
+  		width: 20vw;
+  		height: 16.875em;
+		height: 16.875vw;
+		margin-top: -1.2em;
+		margin-top: -1.2vw;
+  	}
 
 }
 
@@ -456,13 +571,13 @@ body {
 
 
 <body>
-	
+<a id="top"></a>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <img class="circle" src="pics/hs2.JPG">
   <hr id="headshotBreak">
   <a onclick="closeNav()" href="#aboutContainer">About</a>
-  <a onclick="closeNav()" href="#">Skills</a>
+  <a onclick="closeNav()" href="#languageContainer">Skills</a>
   <a onclick="closeNav()" href="#">Portfolio</a>
   <a onclick="closeNav()" href="#">Contact</a>
 </div>
@@ -484,6 +599,34 @@ body {
 			<p id="aboutP">I'm Jai Juan Solis and I design websites for small businesses. I specialize in designing custom webpages
 			 to offer your clients a professional interface to get to know you and become familiar with your services.</p>
 	</div>
+
+	<div id="languageContainer">
+		<h1 id="languageH1">Developing Languages</h1>
+			<div id="languagePicRow">
+			<figure>
+				<img class="languagePics" id="HTML5Logo" src="pics/HTML5 Logo2.png">
+				<figcaption>HTML 5</figcaption>
+			</figure>
+
+			<figure>
+				<img class="languagePics" id="jsLogo" src="pics/JavaScript Logo.svg">
+				<figcaption>JavaScript</figcaption>
+			</figure>
+
+			<figure>
+				<img class="languagePics" id="cssLogo" src="pics/CSS Logo.svg">
+				<figcaption>CSS 3</figcaption>
+			</figure>
+
+			</div>
+		</div>
+
+	<footer>
+		<div id="footerContainer">
+			<a href="#top" style="text-decoration: none;"><button id="backToTopBTN">Back To Top</button></a>
+			<p id="footerText">&copy; 2019 Jai Juan Solis</p>
+		</div>
+	</footer>
 
 <!--
 	<div id="skillContainer">
