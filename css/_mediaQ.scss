@@ -1,0 +1,191 @@
+@media screen and (max-width: 990px) {
+  #contactP {
+    font-size: 3.5em;
+    font-size: 3.5vw;
+  }
+
+  #nameCaption {
+    margin-top: -8em;
+    margin-top: -8vw;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #mainContainer {
+    padding-bottom: 6.5em;
+    padding-bottom: 6.5vw;
+  }
+
+  #nameCaption {
+    position: relative;
+    top: 2%;
+  }
+
+  #comingSoon {
+    position: relative;
+    top: 0%;
+  }
+}
+
+@media screen and (max-height: 576px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 2em;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidenav {
+    padding-top: 7.488em;
+    padding-top: 7.488vw;
+  }
+
+  .sidenav a {
+    text-align: center;
+    font-size: 13em;
+    font-size: 13vw;
+  }
+
+  .sidenav .closebtn {
+    right: 3.12em;
+    right: 3.12vw;
+
+    font-size: 10em;
+    font-size: 10vw;
+
+    margin-left: 6.24em;
+    margin-left: 6.24vw;
+  }
+
+  .circle {
+    position: relative;
+    /*New Changes*/
+    /*left: 16%;*/
+    right: 0;
+    margin: auto;
+
+    width: 35em;
+    width: 35vw;
+
+    height: 30em;
+    height: 35vw;
+
+    padding: 2.496em;
+    padding: 2.496vw;
+  }
+
+  #headshotBreak {
+    margin-top: 2.496em;
+    margin-top: 2.496vw;
+  }
+
+  #mainContainer {
+    padding-bottom: 15vh;
+  }
+
+  #nameH1 {
+    font-size: 12em;
+    font-size: 15vw;
+    line-height: 1;
+  }
+
+  #nameCaption {
+    font-size: 8em;
+    font-size: 10vw;
+    margin-top: -12em;
+    margin-top: -12vw;
+  }
+
+  #comingSoon {
+    font-size: 8em;
+    font-size: 8vw;
+  }
+
+  #contactP {
+    font-size: 4em;
+    font-size: 6vw;
+  }
+
+  #aboutContainer {
+    padding-top: 5.5vh;
+    padding-bottom: 8vh;
+  }
+
+  #aboutH1 {
+    font-size: 5em;
+    font-size: 7vw;
+  }
+
+  #aboutP {
+    font-size: 4em;
+    font-size: 6vw;
+  }
+
+  #languageContainer {
+    padding-bottom: 8vh;
+  }
+
+  #languageH1 {
+    padding-top: 8vh;
+    font-size: 7vw;
+  }
+
+  #languagePicRow {
+    flex-direction: row;
+  }
+
+  .languagePics {
+    width: 13.75em;
+    width: 13vw;
+  }
+
+  #jsLogo {
+    padding-left: 0em;
+    padding-left: 0vw;
+  }
+
+  #cssLogo {
+    width: 20em;
+    width: 20vw;
+    height: 16.875em;
+    height: 16.875vw;
+    margin-top: -1.2em;
+    margin-top: -1.2vw;
+  }
+
+  #languageText {
+    font-size: 6vw;
+  }
+
+  #footerContainer {
+    padding-top: 6vh;
+    padding-bottom: 8.5vh;
+  }
+
+  #contactH1 {
+    font-size: 10vw;
+  }
+
+  #contactPText {
+    font-size: 6vw;
+  }
+
+  #footerContactContainer p {
+    font-size: 5.5em;
+    font-size: 5.5vw;
+  }
+
+  #footerText {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-height: 576px) {
+  .sidenav a {
+    font-size: 8em;
+    font-size: 8vw;
+  }
+}
